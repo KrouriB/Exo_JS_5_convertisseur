@@ -2,6 +2,11 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+*:focus {
+	outline: none;
 }
 
 #container {
@@ -10,4 +15,52 @@
 	justify-content: center;
 	height: 100vh;
 	width: 100vw;
+	color: white;
+	background-image: url(img/45587922305_6fd9c81fb5_b.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
+
+#convertiseur {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 65vw;
+	height: 46vh;
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(14px);
+	gap: 3vh;
+}
+
+label {
+	font-size: 4vh;
+}
+
+#euro {
+	text-align: end;
+	background-color: white;
+	height: 2.7vh;
+	font-size: 2.3vh;
+	width: 30vw;
+	border-radius: 5px;
+	border: none;
+	margin-top: 3vh;
+}
+
+#francs {
+	font-size: 2vh;
+}
+
+input:invalid+span:after {
+	display: none;
+}
+
+input:invalid+span:after {
+	display: block;
+	content: 'Ce nombre est trop precis';
 }
