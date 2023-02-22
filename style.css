@@ -49,18 +49,8 @@ label {
 	width: 30vw;
 	border-radius: 5px;
 	border: none;
-	margin-top: 3vh;
 }
 
 #francs {
 	font-size: 2vh;
-}
-
-input:invalid+span:after {
-	display: none;
-}
-
-input:invalid+span:after {
-	display: block;
-	content: 'Ce nombre est trop precis';
 }
